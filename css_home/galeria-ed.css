@@ -1,0 +1,419 @@
+body {background-color:#363636; box-sizing: border-box;}
+p{color: #9F9F9F;}
+ #Icono{ margin-right: -17%;}
+ #Navegacion {background-color: #363636; 
+  box-shadow:1px 1px 25px #000000;
+  z-index: 200;
+}
+
+
+
+
+
+
+
+
+ .navbar-brand {color: rgb(207, 207, 207);}
+ 
+  
+  
+
+  #a-multimedia  { color: #BA882C; font-weight: bold; font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: medium;
+  
+  padding-left: 0%;
+  padding-right: 0%;
+  
+  
+  }
+  .status {
+    display: inline-block;
+    width: 0.8rem;
+    height: 0.8rem;
+    
+    
+  flex: 0%;
+  position: absolute;
+    border-radius: 100%;
+    bottom: 0.4rem;
+    left: 11.7rem;
+    box-shadow:1px 1px 25px #000000;
+    background: #9F9F9F;
+
+    
+  }
+  #nav-logo{
+
+    margin-left: 0%;
+    margin-right: 0%;
+    
+  }
+  /*hover del menú*/
+
+
+#a-home:hover{
+    color: #9F9F9F;
+    font-weight: bold;
+    font-size: 120%;
+    padding-bottom: 0%;
+    padding-top: 0%;
+    padding-left: 0%;
+    padding-right: 0%;
+    border-radius: 70%;
+    margin-right: 2%; /*para evitar que mueva mucho al resto*/
+    box-shadow:1px 1px 20px #000000;
+    
+  }
+  
+  #a-evento:hover{
+    color: #9F9F9F;
+    font-weight: bold;
+    font-size: 120%;
+    padding-bottom: 0%;
+    padding-top: 0%;
+    padding-left: 0%;
+    padding-right: 0%;
+    border-radius: 70%;
+    box-shadow:1px 1px 20px #000000;
+   
+   
+    
+  }
+  
+  #a-suscripcion:hover{
+    color: #9F9F9F;
+    font-weight: bold;
+    font-size: 120%;
+    padding-bottom: 0%;
+    padding-top: 0%;
+    padding-left: 0%;
+    padding-right: 0%;
+    border-radius: 70%;
+    box-shadow:1px 1px 20px #000000;
+  
+  }
+
+
+  
+.img-fluid{width: 32% ; height: 32% ;}
+ 
+
+
+
+
+
+
+.contenedor-logo {
+  display: flex;
+  justify-content : space-around;
+  grid-area: auto;
+  
+}
+
+
+
+
+
+
+
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: "Monument Extended", Arial, Helvetica, sans-serif;
+ 
+  
+}
+
+body {
+  color: white;
+  margin: 0;
+  padding: 0;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+header {
+  box-sizing: border-box;
+  min-height: 100vh;
+  position: relative;
+  transform-style: inherit;
+  width: 100vw;
+  text-align: center;
+  text-transform: uppercase;
+  height: -90%;
+
+}
+
+#bienvenida h4 {
+  margin: 0;
+  position: absolute;
+  top: 55%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+}
+#bienvenida h5 {
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  color: #BA882C;
+  font-weight: bold;
+}
+
+
+
+
+header:after{
+  content:"";
+  width:100%;
+  height:100%;
+  position:absolute;
+  bottom:0;
+  left:0;
+  z-index:-1;
+ background: linear-gradient(to bottom, rgba(0,0,0,0.12) 40%,rgba(27,32,48,1) 100%);
+}
+
+header,
+header:before {
+  background: 50% 50% / cover;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  background: url(../img/music.jpg);
+  background-size: cover;
+  transform-origin: center center 0;
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+  min-height: 100vh;
+}
+
+
+.contenido {
+  z-index: 2;
+  width: 100%;
+  position: absolute;
+  top: 100vh;
+  background: #363636;
+  line-height: 30px;
+  font-weight: lighter;
+  padding: 40px;
+  color: grey;
+  transition: top 1500ms cubic-bezier(.5,.33,.3,.9) 200ms; 
+}
+
+@media only screen and (max-width: 990px){
+  
+  
+  .status{
+    display: none;
+    width: 0;
+    height: 0;
+  }
+  
+  
+  header {
+    max-width: 100vw;
+    max-height: 50vw;
+  }
+  #content-header{ 
+    vertical-align: middle;
+    
+  }
+
+}
+
+@media only screen and (min-width: 800px){
+header img {
+  width: 512px !important;
+
+}
+
+
+}
+
+
+
+.btn{
+    background-color: #363636;
+    color: #BA882C;
+}
+.btn:hover{
+    background-color: #9F9F9F;
+    color: #363636;
+    border-radius: 20px;
+}
+
+.contenido{
+    margin-top: 8vh;
+}
+
+
+@media only screen and (min-width: 1024px){
+    .contenido{
+      margin-top: 3vh;
+     
+     }
+     
+     
+     }
+   
+ 
+ /* Extra small devices (portrait phones, less than 576px)*/
+ @media (max-width: 575.98px) {
+ 
+    
+  }
+  @media (max-width: 1439px) { 
+     
+  }
+ /* Small devices (landscape phones, less than 768px)*/
+ @media (max-width: 767.98px) {
+    
+ }
+ 
+ /* Medium devices (tablets, less than 992px)*/
+ @media (max-width: 991.98px) {
+    
+  }
+ 
+ /* Large devices (desktops, less than 1200px)*/
+ @media (max-width: 1199.98px) { 
+     
+ }
+ 
+
+
+
+
+
+
+
+
+.row div {
+  
+    width: 100%;
+   height: 100px;
+   
+
+}
+.row{
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+
+#img1{
+    background-image: url(https://static1.abc.es/media/estilo/2020/09/01/ed-k9W--620x349@abc.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#img2{
+    background-image: url('https://img.discogs.com/RnJJ_sbVzy_SQwFgWZ8WPq7wdS0=/600x720/smart/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/A-2184482-1579346862-8600.jpeg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#img3{
+    background-image: url(https://www.elnacional.cat/uploads/s1/80/99/32/6/ed-sheeran-wikimedia-eva-rinaldi_1_630x630.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+#img4{
+    background-image: url(https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2019/09/02/15674134586760.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#img5{
+    background-image: url(https://www.elcomercio.com/files/article_main/uploads/2018/02/23/5a9085d843774.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+#img6{
+    background-image: url(https://www.tuenlinea.com/wp-content/uploads/2018/08/Ed-Sheeran-se-hizo-del-ba%C3%B1o-en-los-pantalones-durante-un-show.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+ #img1, #img2 , #img3, #img4 ,#img5 , #img6{
+    box-shadow: 0 2px 5px 0 #77858c, 0 2px 10px 0 #363636;
+ }
+.img:hover{
+    opacity: 0.50;
+   
+}
+#modal{
+    margin-top: 100vh;
+    z-index: 300;
+}
+.visor{
+    opacity: 0.1;
+}
+.noVisor{
+    opacity: 1;
+    z-index: 300;
+}
+
+
+
+
+#video{
+    padding: 0;
+    width: 100%;
+    height: 400px;
+    box-shadow: 0 2px 5px 0 #77858c, 0 2px 10px 0 #363636;
+   
+}
+#contenedor-video{
+    margin-top: 10.5%; 
+    margin-bottom: 420px;
+}
+.spoti{
+    height: 100px;
+    padding: 0;
+    box-shadow: 0 2px 5px 0 #77858c, 0 2px 10px 0 #363636;
+}
+
+@media (max-width: 575.98px) {
+    
+
+}
+     @media (max-width: 1439px) { 
+        
+     }
+    /* Small devices (landscape phones, less than 768px)*/
+    @media (max-width: 767.98px) {
+       
+    }
+    
+    /* Medium devices (tablets, less than 992px)*/
+    @media (max-width: 991.98px) {
+     
+     }
+    
+    /* Large devices (desktops, less than 1200px)*/
+    @media (max-width: 1199.98px) { 
+       
+    }

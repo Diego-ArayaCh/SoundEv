@@ -1,0 +1,229 @@
+main{
+  margin-top: 3%;
+}
+.texto{
+  text-align: justify;
+
+}
+
+#main-imagen{
+  margin-top: 3%;
+  width: 100px;
+  height: 150px;
+
+}
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+body, html {
+height: 100%;
+margin: 0;
+font-family: 'Ubuntu', sans-serif;
+line-height: 180%;
+color: #666;
+text-align: center;
+
+}
+.parallax1 {
+background: url(../img/suscripcionIMG.jpg);
+
+min-height: 100%;
+
+}
+.parallax2 {
+  background: url(https://store-images.s-microsoft.com/image/apps.43770.13620970507672534.769a3906-91ca-4db7-9b00-2549ddae2af9.f4fa1bdf-bfc1-4bfc-a0cd-bb568b282c08?mode=scale&q=90&h=1080&w=1920);
+min-height: 60%;
+}
+.parallax3 {
+  background: url(https://res.cloudinary.com/springboard-images/image/upload/q_auto,f_auto,fl_lossy/wordpress/2019/07/sb-blog-programming.png);
+min-height: 40%;
+}
+
+.parallax1, .parallax2, .parallax3, .parallax4 {
+position: relative;
+
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+.heading {
+position: absolute;
+color: #fff;
+font-size: 550%;
+top: 38%;
+width: 100%;
+text-transform: uppercase;
+letter-spacing: 8px;
+text-shadow: 0 0 10px #000;
+}
+.heading-sm {
+position: absolute;
+top: 45%;
+width: 100%;
+color: #fff;
+font-size: 250%;
+text-transform: uppercase;
+letter-spacing: 5px;
+text-shadow: 0 0 10px #000;
+}
+.two-col {
+
+width: 100%;
+padding: 0 4%;
+text-align: justify;
+}
+section {
+overflow: auto;
+padding: 50px 80px;
+}
+
+
+@media (max-width: 768px) {
+.heading {
+  font-size: 250%;
+}
+.heading-sm {
+  font-size: 180%;
+}
+.two-col {
+  width: 100%;
+  padding: 0;
+  text-align: center;
+}
+section{
+    padding: 5px;
+}
+}
+
+
+thead tr th{
+  background-color: #BA882C;
+
+}
+table tr{
+  background-color: #9F9F9F;
+  color: #363636;
+
+}
+table{
+  box-shadow: 0 2px 10px 0 #77858c, 0 2px 10px 0 #363636;
+}
+
+
+
+
+#evento p b{
+ font-size: medium;
+}
+
+
+#map{
+  height: 500px;
+
+  width: 100%;
+}
+#map-pink{
+box-shadow: 0 2px 10px 0 #77858c, 0 2px 10px 0 #363636;
+}
+
+@media only screen and (max-device-width: 1024px) {
+.parallax1, .parallax2, .parallax3, .parallax4{
+  background-attachment: scroll;
+}
+}
+
+p a{
+  text-decoration: none;
+  color: #BA882C;
+}
+.foto img{
+  border-radius: 20px;
+  box-shadow: 0 2px 10px 0 #77858c, 0 2px 10px 0 #363636;
+}
+
+#a-acercaDe  { color: #f8f8f8; font-weight: bold; font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: medium;
+  
+  padding-left: 0%;
+  padding-right: 0%;
+  
+  
+  }
+  #a-evento{
+    color: #9F9F9F !important; font-weight: normal; font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: medium;
+  }
+  .status {
+    display: inline-block;
+    width: 0.8rem;
+    height: 0.8rem;
+    
+    
+  flex: 0%;
+  position: absolute;
+    border-radius: 100%;
+    bottom: 0.4rem;
+    left: 75rem;
+    box-shadow:1px 1px 25px #000000;
+    background: #9F9F9F;
+
+    
+  }
+
+  #a-home:hover{
+    color: #9F9F9F;
+    font-weight: bold;
+    font-size: 120%;
+    padding-bottom: 0%;
+    padding-top: 0%;
+    padding-left: 0%;
+    padding-right: 0%;
+    border-radius: 70%;
+    margin-right: 2%; /*para evitar que mueva mucho al resto*/
+    box-shadow:1px 1px 20px #000000;
+    
+  }
+  #a-evento:hover{
+    color: #9F9F9F;
+    font-weight: bold;
+    font-size: 120%;
+    padding-bottom: 0%;
+    padding-top: 0%;
+    padding-left: 0%;
+    padding-right: 0%;
+    border-radius: 70%;
+    margin-right: 2%; /*para evitar que mueva mucho al resto*/
+    box-shadow:1px 1px 20px #000000;
+    
+  }
+  
+  #a-multimedia:hover{
+    color: #9F9F9F;
+    font-weight: bold;
+    font-size: 120%;
+    padding-bottom: 0%;
+    padding-top: 0%;
+    padding-left: 0%;
+    padding-right: 0%;
+    border-radius: 70%;
+    box-shadow:1px 1px 20px #000000;
+   
+   
+    
+  }
+  
+  #a-suscripcion:hover{
+    color: #9F9F9F;
+    font-weight: bold;
+    font-size: 120%;
+    padding-bottom: 0%;
+    padding-top: 0%;
+    padding-left: 0%;
+    padding-right: 0%;
+    border-radius: 70%;
+    box-shadow:1px 1px 20px #000000;
+  
+  }
